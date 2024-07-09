@@ -30,4 +30,5 @@ This project is a web application that allows users to explore a virtual window 
 - No additional frameworks or libraries were used in this project.
 
 ## Usage
+<img width="1032" alt="Screenshot 2024-07-09 at 15 31 39" src="https://github.com/Olliekse/posmotri_v_okno/assets/123179922/8b562a98-1485-4b3d-aa16-8a4194eca1e7">
 
