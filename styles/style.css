@@ -21,6 +21,7 @@ body {
 
 body {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 1200px;
   margin: auto;
@@ -68,9 +69,9 @@ a {
 
 .content {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   gap: 30px;
-  margin: 0 auto;
+  width: 1140px;
 }
 
 .result {
@@ -125,11 +126,6 @@ a {
   outline-offset: 1px;
 }
 
-.search-form__label:has(.search-form__label-text):focus {
-  outline: 1px solid var(--main-color);
-  outline-offset: 1px;
-}
-
 .search-form__label-text {
   user-select: none;
 }
@@ -156,7 +152,6 @@ a {
   font-family: inherit;
   font-weight: normal;
   font-size: var(--font-size-main);
-  letter-spacing: 0.8px;
   background-color: transparent;
   cursor: text;
   appearance: none;
@@ -202,6 +197,9 @@ a {
 }
 
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 194px;
   min-height: 34px;
   border: 1px solid var(--main-color);
@@ -247,7 +245,7 @@ a {
   font-weight: bold;
   font-size: var(--font-size-title);
   line-height: 94%;
-  text-transform: uppercase;
+  text-transform: uppercase; 
 }
 
 .content__accent {
@@ -259,9 +257,12 @@ a {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  gap: 30px;
-  max-height: 298px;
+  height: 298px;
   overflow-y: auto;
+}
+
+.content__list-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .content__card-link {
